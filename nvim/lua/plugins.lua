@@ -48,7 +48,7 @@ return require('packer').startup({
     use {
       'akinsho/bufferline.nvim',
       config = function()
-        require("bufferline").setup{}
+        require("bufferline").setup {}
       end,
       tag = "v2.*",
       requires = 'kyazdani42/nvim-web-devicons',
@@ -214,6 +214,8 @@ return require('packer').startup({
     use { 'marko-cerovac/material.nvim' }
     --
     use { 'tpope/vim-unimpaired' }
+
+    use 'Olical/conjure'
 
     use {
       'numToStr/Comment.nvim',

@@ -52,6 +52,7 @@ local options = {
 
 local globals = {
   mapleader = ' ', --- Map leader key to SPC
+  maplocalleader = ',',
   loaded = 1,
   loaded_netrw = 1,
   loaded_netrwPlugin = 1,
