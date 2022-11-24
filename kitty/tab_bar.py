@@ -94,35 +94,6 @@ def _draw_left_status(
     screen.cursor.bg = 0
     return screen.cursor.x
 
-
-def _draw_right_status(screen: Screen, is_last: bool) -> int:
-    if not is_last:
-        return screen.cursor.x
-
-    cells = [
-        (CLOCK_FG, CLOCK_BG, datetime.datetime.now().strftime(" %H:%M ")),
-        (DATE_FG, DATE_BG, datetime.datetime.now().strftime(" %Y/%m/%d ")),
-    ]
-
-    right_status_length = 0
-    for _, _, cell in cells:
-        right_status_length += len(cell)
-
-    draw_spaces = screen.columns - screen.cursor.x - right_status_length
-    if draw_spaces > 0:
-        screen.draw(" " * draw_spaces)
-
-    for fg, bg, cell in cells:
-        screen.cursor.fg = fg
-        screen.cursor.bg = bg
-        screen.draw(cell)
-    screen.cursor.fg = 0
-    screen.cursor.bg = 0
-
-    screen.cursor.x = max(screen.cursor.x, screen.columns - right_status_length)
-    return screen.cursor.x
-
-
 def draw_tab(
     draw_data: DrawData,
     screen: Screen,
