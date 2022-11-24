@@ -128,7 +128,11 @@ return require('packer').startup({
         'kyazdani42/nvim-web-devicons'
       },
       config = function()
-        require('nvim-tree').setup {}
+        require('nvim-tree').setup {
+          filters = {
+            custom = {"^\\.DS_Store$"}
+          },
+        }
       end
     }
 

@@ -1,10 +1,10 @@
 local options = {
   -- spelllang  = 'en_us,ru',
   langmap    = 'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz',
-  -- clipboard      = "unnamed,unnamedplus",   --- Copy-paste between vim and everything else
+  clipboard  = "unnamed,unnamedplus",   --- Copy-paste between vim and everything else
   -- cmdheight      = 1,                       --- Give more space for displaying messages
   -- completeopt    = "menu,menuone,noselect", --- Better autocompletion
-  -- cursorline     = true,                    --- Highlight of current line
+  cursorline = true,                    --- Highlight of current line
   -- emoji          = false,                   --- Fix emoji display
   -- expandtab      = true,                    --- Use spaces instead of tabs
   -- foldcolumn     = "0",
