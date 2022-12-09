@@ -215,7 +215,8 @@ return require('packer').startup({
     use { 'tpope/vim-surround' }
     use 'windwp/nvim-spectre'
     use 'dyng/ctrlsf.vim'
-    use { 'marko-cerovac/material.nvim' }
+    use 'marko-cerovac/material.nvim'
+    use { 'catppuccin/nvim', as = 'catppuccin' }
     --
     use { 'tpope/vim-unimpaired' }
 
@@ -307,18 +308,6 @@ return require('packer').startup({
       end,
       requires = { 'nvim-lua/plenary.nvim' }
     }
-
-    use {
-      "catppuccin/nvim",
-      as = "catppuccin",
-      config = function()
-        require("catppuccin").setup {
-          flavour = "macchiato" -- mocha, macchiato, frappe, latte
-        }
-        vim.api.nvim_command "colorscheme catppuccin"
-      end
-    }
-
   end,
 
   config = {
