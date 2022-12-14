@@ -1,0 +1,21 @@
+{
+	"font_size": 16,
+	//"font_face": "Hack Nerd Font Mono",
+	"font_face": "Fira Code Retina",
+	"font_options": ["no_italic"],
+	"color_scheme": "Monokai Pro (Filter Machine).sublime-color-scheme",
+	"theme": "Monokai Pro (Filter Machine).sublime-theme",
+	"rulers": [80, 90],
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"highlight_line": true,
+    "hide_tab_scrolling_buttons": true,
+    "indent_to_bracket": true,
+    "monokai_pro_minimal": false,
+    "monokai_pro_sidebar_font_size": 14,
+    "monokai_pro_label_font_size": 14,
+    "monokai_pro_ui_font_face": "Fira Code Retina",
+    "monokai_pro_style_title_bar": true
+}
