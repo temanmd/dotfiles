@@ -10,7 +10,13 @@
 	[
 		"Vintage",
 	],
-	"folder_exclude_patterns": ["node_modules"],
+	"folder_exclude_patterns": [
+		"node_modules",
+		".shadow-cljs",
+		".clj-kondo",
+		".lsp",
+		".calva"
+	],
 	// "highlight_line": true,
     "hide_tab_scrolling_buttons": true,
     "indent_to_bracket": true,
