@@ -8,18 +8,26 @@
 // from the command palette or from `Zed` application menu.
 {
   //"theme": "Catppuccin Macchiato - No Italics",
-  "theme": "Catppuccin Macchiato - No Italics",
+  "theme": "One Dark",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 13,
-  "buffer_font_size": 13,
-  "ui_font_family": "Fira Code Medium",
-  "buffer_font_family": "Fira Code Retina",
-  // "buffer_font_family": "Fira Code Medium",
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "buffer_line_height": "comfortable",
+  // Fira Code Retina
+  // JetBrains Mono
+  "ui_font_family": "JetBrains Mono",
+  "buffer_font_family": "JetBrains Mono",
+  "ui_font_weight": 500,
+  "buffer_font_weight": 500,
+  "terminal": {
+    "font_weight": 600,
+    "font_family": "JetBrains Mono"
+  },
   "buffer_font_features": {
-    "calt": false
+    "calt": true
   },
   "toolbar": {
     "breadcrumbs": false,
@@ -28,19 +36,34 @@
   "experimental.theme_overrides": {
     "editor.invisible": "#777"
   },
+  //"formatter": "language_server",
+  "format_on_save": "on",
   "languages": {
     "Ruby": {
       "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
     },
-    "Kotlin": { "language_servers": ["kotlin-language-server", "..."] },
     "Python": {
-      "formatter": {
-        "external": {
-          "command": "ruff",
-          "arguments": ["format", "-"]
+      "language_servers": ["pyright", "ruff"],
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "code_actions": {
+            "source.organizeImports.ruff": true,
+            "source.fixAll.ruff": true
+          }
+        },
+        {
+          "language_server": {
+            "name": "ruff"
+          }
         }
-      },
-      "format_on_save": "on"
+      ]
+    },
+    "TOML": {
+      "language_servers": ["!taplo", "..."]
+    },
+    "Clojure": {
+      "language_servers": ["clojure-lsp"]
     }
   },
   "lsp": {
@@ -49,14 +72,17 @@
         "diagnostics": true,
         "formatting": true
       }
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 80,
+          "lint": {
+            "extendSelect": ["I"]
+          }
+        }
+      }
     }
-    // "ruby-lsp": {
-    //   "initialization_options": {
-    //     "enabledFeatures": {
-    //       "diagnostics": false
-    //     }
-    //   }
-    // }
   },
-  "show_whitespaces": "all"
+  "show_whitespaces": "selection"
 }
