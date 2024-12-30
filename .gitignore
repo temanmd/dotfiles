@@ -11,3 +11,4 @@ fixtures/_build
 nvim/plugin/*
 emacs/tutorial
 emacs/auto-save-list
+emacs/projects
