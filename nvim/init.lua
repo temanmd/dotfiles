@@ -94,6 +94,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = false
 vim.o.guifont = 'JetBrains Mono'
 vim.g.neovide_cursor_animation_length = 0
+vim.g.neovide_scroll_animation_length = 0.1
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -959,6 +960,8 @@ require('lazy').setup({
     },
   },
 })
+
+vim.cmd 'colorscheme catppuccin-latte'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

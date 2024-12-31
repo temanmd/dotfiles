@@ -11,3 +11,10 @@
 
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+
+(set-fringe-mode 10)
+
+(setq emacs-tmp-dir "/tmp")
+(setq create-lockfiles nil)
+(setq make-backup-files nil)
+(setq backup-inhibited nil)

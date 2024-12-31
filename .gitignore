@@ -9,6 +9,10 @@ TAGS
 
 fixtures/_build
 nvim/plugin/*
+
+emacs/*
+!emacs/init.el
+
 emacs/tutorial
 emacs/auto-save-list
 emacs/projects
