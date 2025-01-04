@@ -93,8 +93,11 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 vim.o.guifont = 'JetBrains Mono'
-vim.g.neovide_cursor_animation_length = 0
-vim.g.neovide_scroll_animation_length = 0.1
+if vim.g.neovide then
+  vim.g.neovide_cursor_animation_length = 0
+  vim.g.neovide_scroll_animation_length = 0.1
+  vim.g.neovide_refresh_rate = 165
+end
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
