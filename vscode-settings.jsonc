@@ -1,0 +1,20 @@
+{
+  "editor.fontSize": 15,
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontWeight": "400",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 0.2,
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.tree.indent": 18,
+  "editor.semanticHighlighting.enabled": true,
+  // prevent VSCode from modifying the terminal colors
+  "terminal.integrated.minimumContrastRatio": 1,
+  // make the window's titlebar use the workbench colors
+  "window.titleBarStyle": "custom",
+  "catppuccin.accentColor": "green",
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "catppuccin.boldKeywords": true,
+  "workbench.iconTheme": "catppuccin-mocha"
+}
