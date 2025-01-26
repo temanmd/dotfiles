@@ -8,16 +8,28 @@
 // from the command palette or from `Zed` application menu.
 {
   //"theme": "Catppuccin Macchiato - No Italics",
-  "theme": "One Dark",
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "theme": "Catppuccin Macchiato - No Italics",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
+  },
+  "scrollbar": {
+    "show": "never"
   },
   "ui_font_size": 15,
   "buffer_font_size": 15,
   "buffer_line_height": "comfortable",
   // Fira Code Retina
   // JetBrains Mono
+  // Losevka
+  // Berkley
   "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_weight": 500,
@@ -40,6 +52,9 @@
   "format_on_save": "on",
   "languages": {
     "Ruby": {
+      "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
+    },
+    "ERB": {
       "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
     },
     "Python": {

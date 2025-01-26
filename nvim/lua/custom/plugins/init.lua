@@ -7,7 +7,7 @@ return {
     'rebelot/kanagawa.nvim',
     lazy = false,
   },
-  { 'Olical/conjure' },
+  -- { 'Olical/conjure' },
   {
     'olimorris/onedarkpro.nvim',
     priority = 1000, -- Ensure it loads first

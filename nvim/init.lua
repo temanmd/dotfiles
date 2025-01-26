@@ -92,11 +92,12 @@ vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
-vim.o.guifont = 'JetBrains Mono'
 if vim.g.neovide then
+  vim.o.guifont = 'JetBrains Mono:h16'
   vim.g.neovide_cursor_animation_length = 0
   vim.g.neovide_scroll_animation_length = 0.1
   vim.g.neovide_refresh_rate = 165
+  vim.g.neovide_scale_factor = 1.0
 end
 
 -- [[ Setting options ]]
@@ -964,7 +965,17 @@ require('lazy').setup({
   },
 })
 
-vim.cmd 'colorscheme catppuccin-latte'
+vim.cmd 'colorscheme catppuccin-macchiato'
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'go',
+  callback = function()
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.softtabstop = 4
+    vim.opt_local.expandtab = true
+  end,
+})
