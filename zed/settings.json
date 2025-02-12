@@ -53,10 +53,10 @@
   "format_on_save": "on",
   "languages": {
     "Ruby": {
-      "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
+      "language_servers": ["ruby-lsp", "solargraph", "rubocop", "..."]
     },
     "ERB": {
-      "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
+      "language_servers": ["ruby-lsp", "solargraph", "rubocop", "..."]
     },
     "Python": {
       "language_servers": ["pyright", "ruff"],
@@ -93,6 +93,14 @@
           "functionTypeParameters": true,
           "parameterNames": true,
           "rangeVariableTypes": true
+        }
+      }
+    },
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          // This disables diagnostics
+          "diagnostics": false
         }
       }
     },

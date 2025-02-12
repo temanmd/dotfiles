@@ -1,12 +1,15 @@
 {
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  // Berkeley Mono Trial, Fira Code Retina, JetBrains Mono
   "editor.fontFamily": "JetBrains Mono",
-  "editor.fontWeight": "400",
+  // "editor.fontWeight": "400",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "window.zoomLevel": 0.2,
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.tree.indent": 18,
+  // we try to make semantic highlighting look good
   "editor.semanticHighlighting.enabled": true,
   // prevent VSCode from modifying the terminal colors
   "terminal.integrated.minimumContrastRatio": 1,
@@ -16,5 +19,13 @@
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": false,
   "catppuccin.boldKeywords": true,
-  "workbench.iconTheme": "catppuccin-mocha"
+  "workbench.iconTheme": "catppuccin-macchiato",
+  "editor.inlayHints.enabled": "off",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "editor.minimap.enabled": false,
+  "kotlin.languageServer.enabled": false,
+  "kotlin.debugAdapter.enabled": false
 }
