@@ -1,4 +1,5 @@
 printf "\nIt will replace your:\n"
+printf "~/.zshrc\n"
 printf "~/.config/nvim\n"
 printf "~/.emacs.d\n"
 printf "~/.config/tmux/tmux.conf\n"
@@ -14,6 +15,7 @@ ln -snf $(PWD)/nvim ~/.config/nvim
 rm -rf ~/.emacs.d || exit 0
 ln -snf $(PWD)/emacs ~/.emacs.d
 
+ln -snf $(PWD)/.zshrc ~/.zshrc
 ln -snf $(PWD)/tmux/tmux.conf ~/.config/tmux/tmux.conf
 ln -snf $(PWD)/oh-my-zsh/my-af-magic.zsh-theme ~/.oh-my-zsh/custom/themes/my-af-magic.zsh-theme
 ln -snf $(PWD)/zed/keymap.json ~/.config/zed/keymap.json
