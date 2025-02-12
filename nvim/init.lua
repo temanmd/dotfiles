@@ -644,6 +644,7 @@ require('lazy').setup({
         ruff = {},
         pyright = {},
         solargraph = {},
+        gopls = {},
       }
 
       -- Ensure the servers and tools above are installed

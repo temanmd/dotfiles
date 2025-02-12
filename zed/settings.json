@@ -8,6 +8,7 @@
 // from the command palette or from `Zed` application menu.
 {
   //"theme": "Catppuccin Macchiato - No Italics",
+  "icon_theme": "Catppuccin Frappé",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",

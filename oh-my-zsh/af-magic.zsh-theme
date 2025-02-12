@@ -1,4 +1,4 @@
-# af-magic.zsh-theme
+# my-af-magic.zsh-theme
 #
 # Author: Andy Fleming
 # URL: http://andyfleming.com/
