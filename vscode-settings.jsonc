@@ -58,7 +58,13 @@
   "workbench.colorCustomizations": {
     "[Catppuccin Frappé]": {
       "editor.background": "#222531",
-      "editorGutter.background": "#222531"
+      "editorGutter.background": "#222531",
+      "tab.activeForeground": "#a6d189",
+      "tab.inactiveForeground": "#a4b2ca",
+      "tab.activeBorderTop": "default",
+      "tab.activeBorder": "#a6d18a",
+      "tab.hoverBorder": "#a6d18a",
+      "tab.activeBackground": "#444761"
     }
   },
   "diffEditor.ignoreTrimWhitespace": true,
