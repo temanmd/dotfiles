@@ -24,8 +24,8 @@
   "scrollbar": {
     "show": "never"
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 15,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
   "buffer_line_height": "comfortable",
   // Fira Code Retina
   // JetBrains Mono

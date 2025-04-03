@@ -1,13 +1,15 @@
 {
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
+  "editor.lineHeight": 23,
   // Berkeley Mono Trial, Fira Code Retina, JetBrains Mono
+  // SFMono Regular
   "editor.fontFamily": "JetBrains Mono",
   // "editor.fontWeight": "400",
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "window.zoomLevel": 0.2,
-  "workbench.colorTheme": "Catppuccin Macchiato",
+  "editor.codeLens": false,
   "workbench.tree.indent": 18,
   // we try to make semantic highlighting look good
   "editor.semanticHighlighting.enabled": true,
@@ -19,13 +21,48 @@
   "catppuccin.italicKeywords": false,
   "catppuccin.italicComments": false,
   "catppuccin.boldKeywords": true,
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.iconTheme": "catppuccin-frappe",
   "editor.inlayHints.enabled": "off",
   "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
-  "editor.minimap.enabled": false,
   "kotlin.languageServer.enabled": false,
-  "kotlin.debugAdapter.enabled": false
+  "kotlin.debugAdapter.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.format.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "*.mutable": {
+        "underline": false
+      }
+    }
+  },
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.colorCustomizations": {
+    "[Catppuccin Frappé]": {
+      "editor.background": "#222531",
+      "editorGutter.background": "#222531"
+    }
+  },
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.padding.top": 10
 }
